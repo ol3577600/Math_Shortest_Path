@@ -1,5 +1,5 @@
 #include "Map.h"  
- // 資工三甲 10227150 白皓元  資工三甲 10227135 邱世鑫  
+
 plink Map::push(int x, int y) {  
     if(curPos==NULL){  
         curPos = new pnode;  
