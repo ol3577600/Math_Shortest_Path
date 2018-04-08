@@ -4,8 +4,7 @@
 #include <cstdlib>
 #include "Map.h"
 #include <stack>
-using namespace std;
-// ¸ê¤u¤T¥Ò 10227150 ¥Õµq¤¸  ¸ê¤u¤T¥Ò 10227135 ªô¥@øÊ   
+using namespace std;  
   
 void ch01(bool b) {
    fstream fp;
@@ -14,8 +13,8 @@ void ch01(bool b) {
    int ExitX = -1;  
    int ExitY = -1;
    string input = "", input2 = "" ;
-   cout << "½Ğ¿é¤JÀÉ¦W : ",cin >> input, input += ".txt" ;
-   fp.open(input.c_str(), ios::in);//¶}±ÒÀÉ®×
+   cout << "è«‹è¼¸å…¥æª”å : ",cin >> input, input += ".txt" ;
+   fp.open(input.c_str(), ios::in);//é–‹å•Ÿæª”æ¡ˆ
    input2 = input2.assign(input, 2, input.length()-2) ;
    input2 = "out" + input2 ; 
    fp_out.open(input2.c_str(), ios::out);
@@ -33,13 +32,13 @@ void ch01(bool b) {
         int x=0, y=0;  
         plink path = NULL;  
         Map map;  
-        cout << "[¦C¦L¥X°g®c¸ô®|]" << endl;  
+        cout << "[åˆ—å°å‡ºè¿·å®®è·¯å¾‘]" << endl;  
         for(int i=0; i<ExitX+1; i++) {  
             for(int j=0;j<ExitY+1; j++)  
                 cout << MAZE[i][j] << " ";  
             cout << endl;  
         }  
-        // ¶}©l¨«°g®c 
+        // é–‹å§‹èµ°è¿·å®® 
 		path = map.push(x,y); 
         while( x<=ExitX && y<=ExitY){
 		    //cout << "(" << x << "," << y <<")"  ;
@@ -61,11 +60,11 @@ void ch01(bool b) {
                 y+=1;  
                 path = map.push(x,y);  
             } else if(EAST == 'D' || WEST == 'D' ||SOUTH == 'D' || NORTH == 'D'){  
-                cout << "\t>>> ¨«¥X°g®c!" << endl;  
+                cout << "\t>>> èµ°å‡ºè¿·å®®!" << endl;  
                 break;  
             } else if (x == -1) {
 				MAZE[0][0] = 'B';  
-                cout << "¨S§ä¨ì¥X¤f!!" << endl;  
+                cout << "æ²’æ‰¾åˆ°å‡ºå£!!" << endl;  
                 for(int i=0; i<ExitX+1; i++) {  
                   for(int j=0;j<ExitY+1; j++)  
                     cout << MAZE[i][j] << " ", fp_out << MAZE[i][j] << " ";  
@@ -73,7 +72,7 @@ void ch01(bool b) {
                 }
                 fp_out.close();
                 return ;
-			} else { // ¨«¨ì¦º­J¦P 
+			} else { // èµ°åˆ°æ­»èƒ¡åŒ 
 			    save = true ; 
                 MAZE[x][y] = 'S';  
                 path = map.pop(&x, &y);  
@@ -81,7 +80,7 @@ void ch01(bool b) {
 			//system("pause");  
         }
 		MAZE[0][0] = 'B';  
-        cout << "[¦C¦L¥X°g®c¸ô®|]" << endl;  
+        cout << "[åˆ—å°å‡ºè¿·å®®è·¯å¾‘]" << endl;  
         for(int i=0; i<ExitX+1; i++) {  
             for(int j=0;j<ExitY+1; j++)  
                 cout << MAZE[i][j] << " ", fp_out << MAZE[i][j] << " ";  
@@ -120,8 +119,8 @@ void ch02(bool b) {
    int ExitY = -1;
    int Candy = -1, numCandy = 0;
    string input = "", input2 = "" ;
-   cout << "½Ğ¿é¤JÀÉ¦W : ",cin >> input, input += ".txt" ;
-   fp.open(input.c_str(), ios::in);//¶}±ÒÀÉ®×
+   cout << "è«‹è¼¸å…¥æª”å : ",cin >> input, input += ".txt" ;
+   fp.open(input.c_str(), ios::in);//é–‹å•Ÿæª”æ¡ˆ
    input2 = input2.assign(input, 2, input.length()-2) ;
    input2 = "out" + input2 ; 
    fp_out.open(input2.c_str(), ios::out);
@@ -141,20 +140,20 @@ void ch02(bool b) {
         plink path = NULL;
 		vector <ploc> candypath ;  
         Map map;  
-        cout << "[¦C¦L¥X°g®c¸ô®|]" << endl;  
+        cout << "[åˆ—å°å‡ºè¿·å®®è·¯å¾‘]" << endl;  
         for(int i=0; i<ExitX+1; i++) {  
             for(int j=0;j<ExitY+1; j++)  
                 cout << MAZE[i][j] << " ";  
             cout << endl;  
         }  
-        // ¶}©l¨«°g®c 
+        // é–‹å§‹èµ°è¿·å®® 
 		path = map.push(x,y); 
         while( x<=ExitX && y<=ExitY){
 		    //cout << "(" << x << "," << y <<")"  ;
             MAZE[x][y] = 'S';
             if (x == -1) {
 				MAZE[0][0] = 'B';  
-                cout <<  "¨S§ä¥X¥ş³¡Ä_ÂÃ!!"<< endl;  
+                cout <<  "æ²’æ‰¾å‡ºå…¨éƒ¨å¯¶è—!!"<< endl;  
                 for(int i=0; i<ExitX+1; i++) {  
                   for(int j=0;j<ExitY+1; j++)  
                     cout << MAZE[i][j] << " ", fp_out << MAZE[i][j] << " ";  
@@ -162,7 +161,7 @@ void ch02(bool b) {
                 }
                 fp_out.close();
                 return ;
-			} // ¦pªG¤W¤U¥ª¥k§ä¨ìÄ_ÂÃ¡A´N²Ö¿n°_¨Ó¡A§ä¨ì©Ò¦³Ä_ÂÃ´N¸õ¥X 
+			} // å¦‚æœä¸Šä¸‹å·¦å³æ‰¾åˆ°å¯¶è—ï¼Œå°±ç´¯ç©èµ·ä¾†ï¼Œæ‰¾åˆ°æ‰€æœ‰å¯¶è—å°±è·³å‡º 
 			if( y != ExitY && EAST == 'G' || y != 0 && WEST == 'G' || x != ExitX && SOUTH == 'G' || x != 0 && NORTH == 'G'){
               ploc newnode ;
 			  bool pass = false ;	
@@ -180,7 +179,7 @@ void ch02(bool b) {
 		      }
 
 			  if ( numCandy == Candy ) {
-                cout << "\t>>> ¨«¥X°g®c!" << endl;  
+                cout << "\t>>> èµ°å‡ºè¿·å®®!" << endl;  
                 break;
 			  }
             } 
@@ -201,7 +200,7 @@ void ch02(bool b) {
 			    if ( save ) path = map.push(x,y);  
                 y+=1;  
                 path = map.push(x,y);  
-            } else { // ¨«¨ì¦º­J¦P 
+            } else { // èµ°åˆ°æ­»èƒ¡åŒ 
 			    save = true ; 
                 MAZE[x][y] = 'S';  
                 path = map.pop(&x, &y);  
@@ -209,7 +208,7 @@ void ch02(bool b) {
 			//system("pause");  
         }
 		MAZE[0][0] = 'B';  
-        cout << endl;  //¦L¥X¸ô®| 
+        cout << endl;  //å°å‡ºè·¯å¾‘ 
         for(int i=0; i<ExitX+1; i++) {  
             for(int j=0;j<ExitY+1; j++)  
                 cout << MAZE[i][j] << " ", fp_out << MAZE[i][j] << " ";  
@@ -245,7 +244,7 @@ void	printMat(Type_save** maze, int ExitX, int ExitY)
     }
 }
 int topx , topy ;
-bool isCanGo(const int prePosValue,  //¦pªG¨S¼²Àğ¡A¤]¨S¨«¹L 
+bool isCanGo(const int prePosValue,  //å¦‚æœæ²’æ’ç‰†ï¼Œä¹Ÿæ²’èµ°é 
 			 const int posX,
 			 const int posY,
 			 Type_save** maze)
@@ -283,7 +282,7 @@ Postion offset[4];
 
 void shortestPath(
 				  const Postion &start,
-				  Type_save** & maze )   // §Q¥Î»¼°j¡A¨«¹M¨C­Ó¸ô®|©M¤è¦ì 
+				  Type_save** & maze )   // åˆ©ç”¨éè¿´ï¼Œèµ°éæ¯å€‹è·¯å¾‘å’Œæ–¹ä½ 
 {
 	if ( maze[start._X][start._Y].type_use == 'G' )
 	{   
@@ -325,8 +324,8 @@ void ch03(){
 
    string input = "", input2 = "" ;
    Postion start ;
-   cout << "½Ğ¿é¤JÀÉ¦W : ",cin >> input, input += ".txt" ;
-   fp.open(input.c_str(), ios::in);//¶}±ÒÀÉ®×
+   cout << "è«‹è¼¸å…¥æª”å : ",cin >> input, input += ".txt" ;
+   fp.open(input.c_str(), ios::in);//é–‹å•Ÿæª”æ¡ˆ
    input2 = input2.assign(input, 2, input.length()-2) ;
    input2 = "out" + input2 ;
    fp_out.open(input2.c_str(), ios::out);
@@ -356,7 +355,7 @@ void ch03(){
 	 
     fp.close();
 
-	offset[0]._X = -1;	offset[0]._Y = 0;	//¬ö¿ı¨«ªº¤è¦ì 
+	offset[0]._X = -1;	offset[0]._Y = 0;	//ç´€éŒ„èµ°çš„æ–¹ä½ 
 	offset[1]._X = 1;	offset[1]._Y = 0;
 	offset[2]._X = 0;	offset[2]._Y = -1;	
 	offset[3]._X = 0;	offset[3]._Y = 1;
@@ -365,8 +364,8 @@ void ch03(){
     cout << endl ;
 	MAZE[start._X][start._Y].num = 1;		
 	
-	shortestPath( start, MAZE); // §ä³Ìµu¸ô®| 
-    MAZE[xxx][yyy].type_use = 'B' ;   // ¥H¤U¬O¦L¥X¦a¹Ï 
+	shortestPath( start, MAZE); // æ‰¾æœ€çŸ­è·¯å¾‘ 
+    MAZE[xxx][yyy].type_use = 'B' ;   // ä»¥ä¸‹æ˜¯å°å‡ºåœ°åœ– 
     for(int i=0; i<ExitX+1; i++) {  
             for(int j=0;j<ExitY+1; j++)  
                 cout << MAZE[i][j].type_use << " ", fp_out << MAZE[i][j].type_use << " ";  
@@ -390,14 +389,14 @@ void ch03(){
 int main() {
 	int command = -1 ;
    do { 
-   cout << endl << "***** «ü¥O¤¶­± ********************";
-   cout << endl << "* 0. QUIT µ²§ô                    *";
-   cout << endl << "* 1. ¥ô°È¤@                       *";
-   cout << endl << "* 2. ¥ô°È¤G                       *";
-   cout << endl << "* 3. ¥ô°È¤T                       *";
+   cout << endl << "***** æŒ‡ä»¤ä»‹é¢ ********************";
+   cout << endl << "* 0. QUIT çµæŸ                    *";
+   cout << endl << "* 1. ä»»å‹™ä¸€                       *";
+   cout << endl << "* 2. ä»»å‹™äºŒ                       *";
+   cout << endl << "* 3. ä»»å‹™ä¸‰                       *";
    cout << endl << "***********************************";
    cout << endl << "Input a command(0, 1, 2, 3): ";
-   cin >> command; //¹Á¸ÕÅª¨ú¾Ş§@«ü¥O
+   cin >> command; //å˜—è©¦è®€å–æ“ä½œæŒ‡ä»¤
    switch (command)
    { case 0: return 0 ;
      case 1: //
@@ -410,7 +409,7 @@ int main() {
 	        break ;
      default: cout << endl << "Command does not exist!" << endl;
    } // end switch
- } while (true); //«ü¥O'0': µ²§ô¥Dµ{¦¡
+ } while (true); //æŒ‡ä»¤'0': çµæŸä¸»ç¨‹å¼
 	
 	system("pause");
 	return 0;
