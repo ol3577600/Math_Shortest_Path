@@ -1,24 +1,13 @@
-²Ä3²ÕDSµ{¦¡§@·~¤Tªº»¡©ú¤å¥ó
 
-²Õ­û:¸ê¤u¤T¥Ò 10227150 ¥Õµq¤¸  ¸ê¤u¤T¥Ò 10227135 ªô¥@øÊ
+é–‹ç™¼ç’°å¢ƒï¼šwin8
 
-¶}µoÀô¹Ò¡Gwin8
+é–‹ç™¼èªžè¨€ï¼šC&C++
 
-¶}µo»y¨¥¡GC&C++
+é–‹ç™¼å¹³å°ï¼šDEV-C++
 
-¶}µo¥­¥x¡GDEV-C++
-
-Â²³æ³]­p¤@­Óclass ¸Ì­±¦³push©Mpop
-¥i¥H§Q¥Î³o­Óclass¨Ó°O¿ý¸ô®|
-¥ô°È¤@ ´N¬O¤W¤U¥ª¥k¨«³X¡A¨«¨ì¦º¸ô©¹¦^¨«¡Aª½¨ì§ä¨ì²×ÂI
-¥ô°È¤G ´N¬O¤W¤U¥ª¥k¨«³X¡A¨ÃÀH®É°O¿ý§ä¨ìÄ_ÂÃªº¼Æ¶q¡Aª½¨ì§ä¨ì©Ò¦³Ä_ÂÃ
-       ¦pªG¨S§ä¨ì¨¬°÷¼Æ¶q¡A·|¨«¹M©Ò¦³¸ô®|¡AµM«á¦^¨ì­ìÂI
-¥ô°È¤T ´N¬O¤W¤U¥ª¥k¨«³X¡A¨Ã¦b¨«¹Lªº¸ô®|¤W¼Ð°OÅv­«¡AÃä¨«¹M©Ò¦³¸ô®|Ãä§ó·s³Ìµu¸ô®|¡C
-
-¤ß±o: ³o¦¸ªº§@·~®É¶¡«Ü¥R¸Î¡AÅý§Ú­Ì·Q¤F«Ü¤[«ç»ò¥hµo´§¡A
-
-      ¦Ó¥B¤]«Ü¦³½ì¡A»s§@¥X¤@­Ó°g®c¡A¥i¥H¥h¯}¸Ñ¡A«Ü¦³¦¨´N·P
-
-      ³Ìµu¸ô®|ªº§äªk¡A¤]Åý§Ú­Ì¶Ë³z¸£µ¬¡A¦ýµ²ªG³£¬O­È±oªº¡A
-
-      Åý§Ú­Ì¹ï©óÃìµ²¦ê¦C¦³«Ü¤jªº»{ÃÑ»P¶i¨B¡C
+ç°¡å–®è¨­è¨ˆä¸€å€‹class è£¡é¢æœ‰pushå’Œpop
+å¯ä»¥åˆ©ç”¨é€™å€‹classä¾†è¨˜éŒ„è·¯å¾‘
+ä»»å‹™ä¸€ å°±æ˜¯ä¸Šä¸‹å·¦å³èµ°è¨ªï¼Œèµ°åˆ°æ­»è·¯å¾€å›žèµ°ï¼Œç›´åˆ°æ‰¾åˆ°çµ‚é»ž
+ä»»å‹™äºŒ å°±æ˜¯ä¸Šä¸‹å·¦å³èµ°è¨ªï¼Œä¸¦éš¨æ™‚è¨˜éŒ„æ‰¾åˆ°å¯¶è—çš„æ•¸é‡ï¼Œç›´åˆ°æ‰¾åˆ°æ‰€æœ‰å¯¶è—
+       å¦‚æžœæ²’æ‰¾åˆ°è¶³å¤ æ•¸é‡ï¼Œæœƒèµ°éæ‰€æœ‰è·¯å¾‘ï¼Œç„¶å¾Œå›žåˆ°åŽŸé»ž
+ä»»å‹™ä¸‰ å°±æ˜¯ä¸Šä¸‹å·¦å³èµ°è¨ªï¼Œä¸¦åœ¨èµ°éŽçš„è·¯å¾‘ä¸Šæ¨™è¨˜æ¬Šé‡ï¼Œé‚Šèµ°éæ‰€æœ‰è·¯å¾‘é‚Šæ›´æ–°æœ€çŸ­è·¯å¾‘ã€‚
