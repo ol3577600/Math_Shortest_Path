@@ -8,7 +8,7 @@
 #define WEST MAZE[x][y-1]  
 #define SOUTH MAZE[x+1][y]  
 #define NORTH MAZE[x-1][y]  
-// 資工三甲 10227150 白皓元  資工三甲 10227135 邱世鑫   
+  
 struct pos{  
     int x,y;  
     struct pos* next;  
